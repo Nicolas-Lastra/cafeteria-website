@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark main-navbar py-0">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand main-navbar__brand">
+                    <img src="icons/logo-sin-fondo.png" alt="" width="60">
+                </a>
+                <button class="navbar-toggler main-navbar__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#main-navbar__options" aria-controls="main-navbar__options" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse main-navbar__options" id="main-navbar__options">
+                <div class="navbar-nav ms-auto text-end pe-3">
+                    <a class="nav-link main-navbar__link active" aria-current="Inicio" href="index.html">Inicio</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Menú" href="pages/menu.html">Menú</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Nosotros" href="pages/us.html">Nosotros</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Galería"
+                        href="pages/gallery.html">Galería</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Contacto"
+                        href="pages/contact.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid text-light d-flex flex-column my-main pe-4 ps-4"
+        style="background-image: url('img/fondo-grano-cafe.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+        <h1 id="my-main__h1">Cafetería Aroma Austral</h1>
+        <p>Si no sabes por donde empezar... ¡empieza con un buen café!</p>
+        <img src="img/capuccino-sin-fondo.png" alt="Capuccino" class="my-main__main-image">
+        <p>En nuestro menú puedes encontrar café de especialidad, tartas, selladitos y más. Explora nuestra carta <a class="text-decoration-underline text-light"
+                href="pages/menu.html">aquí</a>.
+        </p>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container container-fluid text-center py-3 justify-content-center">
+
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="footer-container__contact col-sm-12 col-md-4">
+                    <p>
+                        <a href="https://maps.app.goo.gl/2fDmWmGi7mYL5KEs9" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none text-reset d-inline-flex align-items-center">
+                            <img src="icons/map-pin.svg" alt="Ubicación" style="width: 20px; margin-right: 3px;">
+                            Carmen Arias 18, Villa Amengual, Lago Verde.
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Texto y derechos de autor -->
+                <div class="footer-container__text col-sm-12 col-md-4">
+                    <p>&copy; 2025 Aroma Austral Café. Todos los derechos reservados.</p>
+
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="footer-container__social col-sm-12 col-md-4">
+                    <a href="https://www.facebook.com/aromaaustralcafeteria/" target="_blank">
+                        <img src="icons/brand-facebook.svg" alt="Facebook" class="footer-container__social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/aromaaustral.cafe/" target="_blank">
+                        <img src="icons/brand-instagram.svg" alt="Instagram" class="footer-container__social-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/@aromaaustral.cafe" target="_blank">
+                        <img src="icons/brand-tiktok.svg" alt="TikTok" class="footer-container__social-icon">
+                    </a>
+                    <a href="https://wa.me/56971651085" target="_blank">
+                        <img src="icons/brand-whatsapp.svg" alt="WhatsApp" class="footer-container__social-icon">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Botón de volver al inicio -->
+    <!-- <a href="#inicio" class="btn rounded-circle position-fixed bottom-0 end-0 mb-custom me-4 shadow"
+        style="z-index: 1030;"><img src="icons/arrow-big-up-lines.svg" alt="">
+    </a> -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
