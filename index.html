@@ -4,10 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"> -->
+
+    <!-- Google Fonts: Optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    </noscript>
+
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Bootstrap -->
@@ -21,7 +33,8 @@
         <nav class="navbar navbar-expand-sm navbar-dark main-navbar py-0">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand main-navbar__brand">
-                    <img src="icons/logo-marca.webp" alt="" width="60">
+                    <img src="icons/logo-marca.webp" alt="Logo Aroma Austral" aria-label="Logo Aroma Austral"
+                        width="60">
                 </a>
                 <button class="navbar-toggler main-navbar__toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#main-navbar__options" aria-controls="main-navbar__options" aria-expanded="false"
@@ -34,7 +47,8 @@
                 <div class="navbar-nav ms-auto text-end pe-3">
                     <a class="nav-link main-navbar__link active" aria-current="Inicio" href="index.html">Inicio</a>
                     <a class="nav-link main-navbar__link active" aria-current="Menú" href="pages/menu.html">Menú</a>
-                    <a class="nav-link main-navbar__link active" aria-current="Nosotros" href="pages/us.html">Nosotros</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Nosotros"
+                        href="pages/us.html">Nosotros</a>
                     <a class="nav-link main-navbar__link active" aria-current="Galería"
                         href="pages/gallery.html">Galería</a>
                     <a class="nav-link main-navbar__link active" aria-current="Contacto"
@@ -49,9 +63,12 @@
 
         <h1 id="my-main__h1">Cafetería Aroma Austral</h1>
         <p>Si no sabes por donde empezar... ¡empieza con un buen café!</p>
-        <img src="img/capuccino-sin-fondo.webp" alt="Capuccino" class="my-main__main-image">
-        <p>En nuestro menú puedes encontrar café de especialidad, tartas, selladitos y más. Explora nuestra carta <a class="text-decoration-underline text-light"
-                href="pages/menu.html">aquí</a>.
+        <!-- <img src="img/capuccino-sin-fondo.webp" alt="Capuccino" class="my-main__main-image"> -->
+        <img src="img/capuccino-sin-fondo.webp" alt="Capuccino" class="my-main__main-image" width="400" height="400"
+            fetchpriority="high" decoding="async" />
+
+        <p>En nuestro menú puedes encontrar café de especialidad, tartas, selladitos y más. Explora nuestra carta <a
+                class="text-decoration-underline text-light" href="pages/menu.html">aquí</a>.
         </p>
 
     </main>

@@ -20,8 +20,10 @@ main {
 .my-main--index {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center;     /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
     /* padding-top: 0.5rem;
     padding-bottom: 0.5rem; */
     text-align: center;
@@ -90,9 +92,14 @@ footer {
     }
 
     .my-main__main-image {
-        height: auto;
+        /* height: auto;
         width: 75vw;
-        padding: 5%;
+        padding: 5%; */
+
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 1rem;
     }
 }
 
@@ -110,11 +117,11 @@ footer {
         }
     }
 
-    .my-main__main-image {
+    /* .my-main__main-image {
         height: 60vh;
         width: 60vh;
         padding: 5%;
-    }
+    } */
 }
 
 /* Medium */
@@ -138,7 +145,7 @@ footer {
         padding: 5%;
     }
 
-    .my-main--index > p {
+    .my-main--index>p {
         font-size: 1.5rem;
         font-weight: 400;
     }
@@ -170,7 +177,7 @@ footer {
         margin-bottom: auto;
     }
 
-    .my-main--index > p {
+    .my-main--index>p {
         font-weight: 400;
         font-size: 1.5rem;
         margin-top: auto;
