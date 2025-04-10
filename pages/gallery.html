@@ -4,19 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts: Optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Imagen de fondo -->
+    <link rel="preload" as="image" href="../img/fondo-grano-cafe.webp" type="image/webp">
+
     <!-- Styles -->
     <link rel="stylesheet" href="../css/styles.css">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Gallery</title>
+    <title>Galería</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark main-navbar py-0">
             <div class="container-fluid">
@@ -43,8 +59,14 @@
         </nav>
     </header>
 
-    <main class="container-fluid text-light d-flex flex-column my-main pe-4 ps-4"
-        style="background-image: url('../img/fondo-grano-cafe.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <main class="container-fluid text-light d-flex flex-column my-main pe-4 ps-4 position-relative">
+
+        <!-- Imagen de fondo -->
+        <picture class="position-absolute top-0 start-0 w-100 h-100 z-n1">
+            <source srcset="../img/fondo-grano-cafe-mobile.webp" media="(max-width: 576px)" type="image/webp">
+            <source srcset="../img/fondo-grano-cafe.webp" media="(min-width: 577px)" type="image/webp">
+            <img src="../img/fondo-grano-cafe.webp" alt="" aria-hidden="true" class="w-100 h-100 object-fit-cover" loading="eager" decoding="async">
+        </picture>
 
     </main>
 
@@ -58,7 +80,8 @@
                     <p>
                         <a href="https://maps.app.goo.gl/2fDmWmGi7mYL5KEs9" target="_blank" rel="noopener noreferrer"
                             class="text-decoration-none text-reset d-inline-flex align-items-center">
-                            <img src="../icons/map-pin.svg" loading="lazy" alt="Ubicación" style="width: 20px; margin-right: 3px;">
+                            <img src="../icons/map-pin.svg" loading="lazy" alt="Ubicación"
+                                style="width: 20px; margin-right: 3px;">
                             Carmen Arias 18, Villa Amengual, Lago Verde.
                         </a>
                     </p>
@@ -73,16 +96,20 @@
                 <!-- Redes Sociales -->
                 <div class="footer-container__social col-sm-12 col-md-4">
                     <a href="https://www.facebook.com/aromaaustralcafeteria/" target="_blank">
-                        <img src="../icons/brand-facebook.svg" loading="lazy" alt="Facebook" class="footer-container__social-icon">
+                        <img src="../icons/brand-facebook.svg" loading="lazy" alt="Facebook"
+                            class="footer-container__social-icon">
                     </a>
                     <a href="https://www.instagram.com/aromaaustral.cafe/" target="_blank">
-                        <img src="../icons/brand-instagram.svg" loading="lazy" alt="Instagram" class="footer-container__social-icon">
+                        <img src="../icons/brand-instagram.svg" loading="lazy" alt="Instagram"
+                            class="footer-container__social-icon">
                     </a>
                     <a href="https://www.tiktok.com/@aromaaustral.cafe" target="_blank">
-                        <img src="../icons/brand-tiktok.svg" loading="lazy" alt="TikTok" class="footer-container__social-icon">
+                        <img src="../icons/brand-tiktok.svg" alt="TikTok" loading="lazy"
+                            class="footer-container__social-icon">
                     </a>
                     <a href="https://wa.me/56971651085" target="_blank">
-                        <img src="../icons/brand-whatsapp.svg" loading="lazy" alt="WhatsApp" class="footer-container__social-icon">
+                        <img src="../icons/brand-whatsapp.svg" alt="WhatsApp" loading="lazy"
+                            class="footer-container__social-icon">
                     </a>
                 </div>
             </div>
@@ -91,6 +118,7 @@
 
     </footer>
 
+    <script src="../js/menu-nav.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

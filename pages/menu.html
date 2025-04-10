@@ -4,12 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts: Optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Imagen de fondo -->
+    <link rel="preload" as="image" href="../img/fondo-grano-cafe.webp" type="image/webp">
+
     <!-- Styles -->
     <link rel="stylesheet" href="../css/styles.css">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -86,8 +96,14 @@
         </div>
     </nav>
 
-    <main class="container-fluid text-light d-flex flex-column my-main pe-4 ps-4"
-        style="background-image: url('../img/fondo-grano-cafe.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <main class="container-fluid text-light d-flex flex-column my-main pe-4 ps-4 position-relative">
+
+        <!-- Imagen de fondo -->
+        <picture class="position-absolute top-0 start-0 w-100 h-100 z-n1">
+            <source srcset="../img/fondo-grano-cafe-mobile.webp" media="(max-width: 576px)" type="image/webp">
+            <source srcset="../img/fondo-grano-cafe.webp" media="(min-width: 577px)" type="image/webp">
+            <img src="../img/fondo-grano-cafe.webp" alt="" aria-hidden="true" class="w-100 h-100 object-fit-cover" loading="eager" decoding="async">
+        </picture>
 
         <!-- Sección: Café -->
         <section id="cafe" class="mb-5">
@@ -110,7 +126,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Espresso doble o doppio">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Espresso doble o doppio">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Espresso doble - doppio</h5>
                             <p class="card-text">40 - 50 ml de café</p>
@@ -123,7 +140,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Filtrado V60">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Filtrado V60">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Filtrado V60</h5>
                             <p class="card-text">350 ml de bebida total</p>
@@ -157,7 +175,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Cortado">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Cortado">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Cortado</h5>
                             <p class="card-text">Doble espresso más 20 ml de leche texturizada</p>
@@ -170,7 +189,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Flat White">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Flat White">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Flat White</h5>
                             <p class="card-text">Doble espresso más 100 ml de leche texturizada ligera</p>
@@ -183,7 +203,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="../img/menu/latte.webp" loading="lazy" class="img-fluid rounded-start img-card" alt="Latte">
+                        <img src="../img/menu/latte.webp" loading="lazy" class="img-fluid rounded-start img-card"
+                            alt="Latte">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Latte</h5>
                             <p class="card-text">Doble espresso más 250 ml de leche texturizada</p>
@@ -196,7 +217,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Macchiato">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Macchiato">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Macchiato</h5>
                             <p class="card-text">Doble espresso más una mancha de espuma de leche</p>
@@ -209,7 +231,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Mocaccino">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Mocaccino">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Mocaccino</h5>
                             <p class="card-text">Doble espresso con chocolate, 250 ml de leche y espuma de leche</p>
@@ -230,8 +253,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card"
-                            alt="Americano frío">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Americano frío">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Americano frío</h5>
                             <p class="card-text">Doble espresso con 200 ml de agua fría más hielo</p>
@@ -244,7 +267,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Chai Latte frío">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Chai Latte frío">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Chai Latte frío</h5>
                             <p class="card-text">Chai con 250 ml de leche más hielo</p>
@@ -257,7 +281,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Expresso tonica">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Expresso tonica">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Expresso tonica</h5>
                             <p class="card-text">Doble espresso con bebida tónica más hielo</p>
@@ -270,7 +295,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Frapuccino">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Frapuccino">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Frapuccino</h5>
                             <p class="card-text">Doble espresso con hielo, 250 ml de leche, salsa a elección y crema
@@ -284,7 +310,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Latte Frío">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Latte Frío">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Latte Frío</h5>
                             <p class="card-text">Doble espresso con hielo y 250 ml de leche fría</p>
@@ -297,7 +324,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Latte Frío Caramelo">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Latte Frío Caramelo">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Latte Frío Caramelo</h5>
                             <p class="card-text">Doble espresso con hielo, 250 ml de leche fría y syrup de caramelo</p>
@@ -310,7 +338,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Latte Frío Vainilla">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Latte Frío Vainilla">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Latte Frío Vainilla</h5>
                             <p class="card-text">Doble espresso con hielo, 250 ml de leche fría y syrup de vainilla</p>
@@ -323,7 +352,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card" alt="Matcha Latte Frío">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Matcha Latte Frío">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Matcha Latte Frío</h5>
                             <p class="card-text">Té matcha con 250 ml de leche y hielo</p>
@@ -344,8 +374,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card"
-                            alt="Chai Latte">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Chai Latte">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Chai Latte</h5>
                             <p class="card-text">Chai con 250 ml de leche texturizada</p>
@@ -358,8 +388,8 @@
 
                 <div class="col">
                     <div class="card card-horizontal h-100 flex-md-row shadow text-light">
-                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy" class="img-fluid rounded-start img-card"
-                            alt="Chai Latte">
+                        <img src="https://placehold.co/300x300?text=Product+photo" loading="lazy"
+                            class="img-fluid rounded-start img-card" alt="Chai Latte">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h5 class="card-title">Chai Latte</h5>
                             <p class="card-text">Chai con 250 ml de leche texturizada</p>
@@ -385,7 +415,8 @@
                     <p>
                         <a href="https://maps.app.goo.gl/2fDmWmGi7mYL5KEs9" target="_blank" rel="noopener noreferrer"
                             class="text-decoration-none text-reset d-inline-flex align-items-center">
-                            <img src="../icons/map-pin.svg" loading="lazy" alt="Ubicación" style="width: 20px; margin-right: 3px;">
+                            <img src="../icons/map-pin.svg" loading="lazy" alt="Ubicación"
+                                style="width: 20px; margin-right: 3px;">
                             Carmen Arias 18, Villa Amengual, Lago Verde.
                         </a>
                     </p>
@@ -400,16 +431,20 @@
                 <!-- Redes Sociales -->
                 <div class="footer-container__social col-sm-12 col-md-4">
                     <a href="https://www.facebook.com/aromaaustralcafeteria/" target="_blank">
-                        <img src="../icons/brand-facebook.svg" loading="lazy" alt="Facebook" class="footer-container__social-icon">
+                        <img src="../icons/brand-facebook.svg" loading="lazy" alt="Facebook"
+                            class="footer-container__social-icon">
                     </a>
                     <a href="https://www.instagram.com/aromaaustral.cafe/" target="_blank">
-                        <img src="../icons/brand-instagram.svg" loading="lazy" alt="Instagram" class="footer-container__social-icon">
+                        <img src="../icons/brand-instagram.svg" loading="lazy" alt="Instagram"
+                            class="footer-container__social-icon">
                     </a>
                     <a href="https://www.tiktok.com/@aromaaustral.cafe" target="_blank">
-                        <img src="../icons/brand-tiktok.svg" alt="TikTok" loading="lazy" class="footer-container__social-icon">
+                        <img src="../icons/brand-tiktok.svg" alt="TikTok" loading="lazy"
+                            class="footer-container__social-icon">
                     </a>
                     <a href="https://wa.me/56971651085" target="_blank">
-                        <img src="../icons/brand-whatsapp.svg" alt="WhatsApp" loading="lazy" class="footer-container__social-icon">
+                        <img src="../icons/brand-whatsapp.svg" alt="WhatsApp" loading="lazy"
+                            class="footer-container__social-icon">
                     </a>
                 </div>
             </div>

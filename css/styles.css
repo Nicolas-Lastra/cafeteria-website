@@ -17,6 +17,17 @@ main {
     /* Hace que el main ocupe el espacio restante */
 }
 
+.object-fit-cover {
+    object-fit: cover;
+    z-index: -1;
+}
+
+picture {
+    display: block;
+    pointer-events: none;
+    z-index: -1;
+}
+
 .my-main--index {
     display: flex;
     flex-direction: column;
