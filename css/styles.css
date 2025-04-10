@@ -17,6 +17,16 @@ main {
     /* Hace que el main ocupe el espacio restante */
 }
 
+.my-main--index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente */
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem; */
+    text-align: center;
+}
+
 footer {
     flex-shrink: 0;
 }
@@ -127,6 +137,11 @@ footer {
         width: 60vh;
         padding: 5%;
     }
+
+    .my-main--index > p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
 }
 
 /* Large ≥992px */
@@ -151,6 +166,20 @@ footer {
         height: 26vw;
         width: 26vw;
         margin-left: 5%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .my-main--index > p {
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .my-main--index {
+        padding-top: 2rem;
+        padding-bottom: auto;
     }
 }
 
