@@ -310,3 +310,10 @@ footer {
         height: 100%;
     }
 }
+
+@media (max-width: 576px) {
+    .background-blur {
+        filter: blur(10px) brightness(0.8);
+        transform: scale(1.05); /* Previene bordes negros por el blur */
+    }
+}
