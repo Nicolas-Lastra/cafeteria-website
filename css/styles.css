@@ -291,25 +291,35 @@ footer {
 @media (max-width: 576px) {
     .background-blur {
         filter: blur(10px) brightness(0.8);
-        transform: scale(1.05); /* Previene bordes negros por el blur */
+        transform: scale(1.05);
+        /* Previene bordes negros por el blur */
     }
 }
 
 /* Contact */
 @media (min-width: 768px) {
-    
+
     .main-contact {
-      min-height: calc(100vh - 100px); /* Ajusta según altura del header + footer */
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding-top: auto;
-      padding-bottom: auto;
+        min-height: calc(100vh - 100px);
+        /* Ajusta según altura del header + footer */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: auto;
+        padding-bottom: auto;
     }
-  
+
     .main-contact form {
-      max-width: 600px;
-      width: 100%;
-      margin: 2rem;
+        max-width: 600px;
+        width: 100%;
+        margin: 2rem;
     }
-  }
+}
+
+/* Nosotros */
+
+@media (min-width: 992px) {
+    .us-hero__text > * {
+        margin-block: 3rem; /* padding-block también sirve si prefieres padding */
+      }
+}
