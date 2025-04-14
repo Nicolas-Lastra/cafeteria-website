@@ -46,7 +46,7 @@ footer {
 
 .main-navbar__link {
     transition: color 0.3s ease, background-color 0.3s ease;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 
 .footer-container {
@@ -296,7 +296,7 @@ footer {
     }
 }
 
-/* Contact */
+/* Contacto | Contact */
 @media (min-width: 768px) {
 
     .main-contact {
@@ -316,10 +316,17 @@ footer {
     }
 }
 
-/* Nosotros */
-
+/* Nosotros | Us*/
 @media (min-width: 992px) {
-    .us-hero__text > * {
-        margin-block: 3rem; /* padding-block también sirve si prefieres padding */
-      }
+    .us-hero__text>* {
+        margin-block: 3rem;
+    }
+}
+
+/* Galería | Gallery */
+.gallery-img-fixed {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0.5rem;
 }
