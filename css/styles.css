@@ -188,6 +188,11 @@ footer {
 }
 
 /* Menu */
+
+.main-menu {
+    background-color: #150d06ff;
+}
+
 #menu-section-nav::-webkit-scrollbar {
     display: none;
 }
