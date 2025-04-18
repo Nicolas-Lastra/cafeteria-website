@@ -45,6 +45,14 @@ function handleStickyMenu() {
     }
 }
 
+// Forzar limpieza de 'active' en clic manual
+sectionLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+        // Elimina todas las clases 'active' inmediatamente
+        sectionLinks.forEach(l => l.classList.remove('active'));
+    });
+});
+
 // Eventos
 window.addEventListener('scroll', () => {
     updateActiveLink();
