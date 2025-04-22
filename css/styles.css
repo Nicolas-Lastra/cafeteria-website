@@ -193,15 +193,13 @@ footer {
     background-color: #150d06ff;
 }
 
-#menu-section-nav::-webkit-scrollbar {
+#menu-section-nav .overflow-auto::-webkit-scrollbar {
     display: none;
 }
 
-#menu-section-nav {
-    -ms-overflow-style: none;
-    /* IE y Edge */
-    scrollbar-width: none;
-    /* Firefox */
+#menu-section-nav .overflow-auto {
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;     /* Firefox */
 }
 
 .menu-navbar {
