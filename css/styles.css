@@ -230,10 +230,18 @@ footer {
     color: white;
 }
 
-.nav-pills a:hover {
-    background-color: #AB886D;
+.nav-pills a:visited {
     color: white;
 }
+
+@media (min-width: 992px) {
+    /* Evita que se mantengan activas dos secciones del navbar al mismo tiempo */
+    .nav-pills a:hover {
+        background-color: #AB886D;
+        color: white;
+    }
+}
+
 
 .card-horizontal {
     display: flex;
