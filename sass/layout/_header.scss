@@ -1,0 +1,13 @@
+.navbar {
+    background-color: rgba(50, 26, 20, 1);
+}
+
+.main-navbar__link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.main-navbar__link:hover {
+    background-color: #4a2a20;
+    text-decoration: none;
+}

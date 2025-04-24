@@ -1,0 +1,137 @@
+.main-menu {
+    background-color: #150d06ff;
+}
+
+#menu-section-nav .overflow-auto::-webkit-scrollbar {
+    display: none;
+}
+
+#menu-section-nav .overflow-auto {
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+.menu-navbar {
+    background-color: #392007;
+}
+
+.menu-navbar.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.card-price {
+    font-weight: bold;
+    color: #f8d39b;
+    font-size: 1.1rem;
+}
+
+.nav-pills a.active {
+    background-color: #AB886D !important;
+}
+
+.nav-pills a {
+    color: white;
+}
+
+.nav-pills a:visited {
+    color: white;
+}
+
+@media (min-width: 992px) {
+    /* Evita que se mantengan activas dos secciones del navbar al mismo tiempo */
+    .nav-pills a:hover {
+        background-color: #AB886D;
+        color: white;
+    }
+}
+
+.card-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(82, 73, 57) !important;
+    background: linear-gradient(90deg, rgba(82, 73, 57, 1) 0%, rgba(112, 100, 79, 0.23217209246980042) 25%) !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card-horizontal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-horizontal {
+        flex-direction: row;
+        text-align: start;
+        align-items: stretch;
+    }
+}
+
+.img-card {
+    width: 80%;
+    height: auto;
+    max-width: 250px;
+    margin-top: 10px;
+    object-fit: scale-down
+}
+
+@media (max-width: 576px) {
+    .img-card {
+        width: 50%;
+        max-width: none;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .img-card {
+        width: 50%;
+        max-width: 250px;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-card {
+        width: 50%;
+        max-width: none;
+        height: 100%;
+    }
+}
+
+.btn-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(171, 136, 109, 0.85);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1040;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.btn-scroll-top:hover {
+    transform: scale(1.1);
+    background-color: #ab886d;
+}
+
+/* Mostrar el botón cuando se hace scroll */
+.btn-scroll-top.visible {
+    display: flex;
+}

@@ -1,0 +1,18 @@
+@media (min-width: 768px) {
+
+    .main-contact {
+        min-height: calc(100vh - 100px);
+        /* Ajusta según altura del header + footer */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: auto;
+        padding-bottom: auto;
+    }
+
+    .main-contact form {
+        max-width: 600px;
+        width: 100%;
+        margin: 2rem;
+    }
+}

@@ -1,0 +1,29 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    flex: 1 0 auto;
+    /* Hace que el main ocupe el espacio restante */
+}
+
+.object-fit-cover {
+    object-fit: cover;
+    z-index: -1;
+}
+
+picture {
+    display: block;
+    pointer-events: none;
+    z-index: -1;
+}
