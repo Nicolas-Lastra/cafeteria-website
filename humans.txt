@@ -1,0 +1,12 @@
+/* TEAM */
+Developer: Nicolás Lastra
+GitHub: https://github.com/Nicolas-Lastra/
+Email: nicolas.lastra.inzunza@gmail.com
+Location: Villa Amengual, Lago Verde, Región de Aysén, Chile
+
+/* SITE */
+Project: Sitio web para Cafetería Aroma Austral (2025)
+Last update: 2025-04-22
+
+/* THANKS */
+Gracias por visitar este sitio. Desarrollado con pasión por el código y el café ☕.

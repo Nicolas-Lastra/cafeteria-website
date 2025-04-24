@@ -1,0 +1,25 @@
+{
+  "name": "cafeteria-aroma-austral",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolas-Lastra/cafeteria-website.git"
+  },
+  "keywords": ["cafetería",
+    "sass",
+    "html",
+    "bootstrap",
+    "patagonia"],
+  "author": "Nicolás Lastra <nicolas.lastra.inzunza@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicolas-Lastra/cafeteria-website/issues"
+  },
+  "homepage": "https://github.com/Nicolas-Lastra/cafeteria-website#readme",
+  "description": "Sitio web de la cafetería Aroma Austral, desarrollada en HTML, CSS, Bootstrap y Sass."
+}
