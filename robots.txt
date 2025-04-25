@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://nicolas-lastra.github.io/cafeteria-website/sitemap.xml
