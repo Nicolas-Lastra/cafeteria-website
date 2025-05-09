@@ -18,7 +18,8 @@
     <meta name="description"
         content="Contáctanos y planifica tu visita a nuestra cafetería en la Región de Aysén, Chile. Estamos ubicados en Villa Amengual, punto clave de la ruta turística en la Patagonia.">
     <meta name="author" content="Aroma Austral Café">
-    <meta name="keywords" content="contacto aroma austral, contacto cafetería Villa Amengual, ubicación café Patagonia, cómo llegar Lago Verde, contacto café Chile, información cafetería turística">
+    <meta name="keywords"
+        content="contacto aroma austral, contacto cafetería Villa Amengual, ubicación café Patagonia, cómo llegar Lago Verde, contacto café Chile, información cafetería turística">
 
     <!-- Open Graph para redes sociales -->
     <meta property="og:title" content="Contacto Aroma Austral - Café de especialidad en Villa Amengual, Aysén">
@@ -96,7 +97,8 @@
         <p>¿Tienes dudas, sugerencias o deseas hacer un pedido especial? Envíanos un mensaje y te responderemos lo antes
             posible.</p>
 
-        <form class="row g-3 needs-validation" novalidate id="contact-form" method="POST" action="https://formspree.io/f/mgvadvzb">
+        <form class="row g-3 needs-validation" novalidate id="contact-form" method="POST"
+            action="https://formspree.io/f/mgvadvzb">
             <div class="col-md-6">
                 <label for="name" class="form-label">Nombre completo</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
@@ -125,25 +127,71 @@
             </div>
         </form>
 
+        <section id="ubicacion-cafeteria" class="cafeteria-location mt-5">
+            <h2 class="cafeteria-location__title">¿Cómo llegar a nuestra cafetería?</h2>
+
+            <p class="cafeteria-location__description">
+                Nuestra cafetería está ubicada en <strong>Villa Amengual</strong>, una pintoresca localidad de la comuna
+                de Lago Verde en la Región de Aysén.
+                Aunque Lago Verde posee una geografía particular que separa su centro de muchas localidades, Villa
+                Amengual es fácilmente accesible.
+                Este lugar se sitúa estratégicamente entre <strong>Villa Mañihuales</strong>, <strong>Puerto
+                    Cisnes</strong> y <strong>Puyuhuapi</strong>,
+                siendo un punto ideal para detenerse a descansar y disfrutar de un buen café en medio de la ruta
+                patagónica.
+            </p>
+
+            <h3 class="cafeteria-location__subtitle">Formas de llegar</h3>
+            <ul class="cafeteria-location__routes">
+                <li>
+                    <strong>Desde el sur:</strong> Puedes tomar un vuelo hasta <em>Aeropuerto Balmaceda</em>,
+                    viajar por tierra hasta <strong>Coyhaique</strong> y continuar por la <strong>Carretera
+                        Austral</strong> hacia el norte.
+                </li>
+                <li>
+                    <strong>Desde el norte:</strong> Accede por la <strong>Ruta Bimodal</strong> desde
+                    <em>Hornopirén</em> a través de barcazas,
+                    viajando hacia el sur por la Carretera Austral, atravesando <strong>Puyuhuapi</strong> y la
+                    <strong>Reserva Nacional Queulat</strong>.
+                </li>
+                <li>
+                    <strong>Desde Chiloé:</strong> Puedes tomar una barcaza desde <strong>Quellón</strong> hacia
+                    <strong>Puerto Cisnes</strong>,
+                    y desde ahí seguir por tierra hasta conectar con la <strong>Ruta 7</strong> en dirección sur.
+                </li>
+            </ul>
+
+            <div class="cafeteria-location__map-wrapper mt-4">
+                <iframe class="cafeteria-location__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.565825320732!2d-72.21380692463963!3d-44.74887396125989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdf4833766288069%3A0x935a0276258ad163!2sAroma%20Austral%20Caf%C3%A9!5e0!3m2!1ses-419!2scl!4v1746802601585!5m2!1ses-419!2scl"
+                    width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa ubicación Aroma Austral Café, Villa Amengual">
+                </iframe>
+            </div>
+        </section>
+
+
+
     </main>
 
     <!-- Modal de confirmación -->
     <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content text-dark">
-            <div class="modal-header">
-              <h5 class="modal-title" id="successModalLabel">Formulario enviado</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Formulario enviado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    Tu mensaje ha sido enviado correctamente.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
             </div>
-            <div class="modal-body">
-              Tu mensaje ha sido enviado correctamente.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <footer>
 
